@@ -1,3 +1,11 @@
 const routes = require('express').Router()
+const { User } = require('./app/models')
 
-module.exports = rountes
+User.create({
+  name: "Ricardo",
+  email: "ricardowoj@hotmail.com",
+  password_hash: "123456789"
+
+})
+
+module.exports = routes
